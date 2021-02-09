@@ -12,6 +12,16 @@
   text-align: center;
   padding-top: 40vh;
 }
+.home__photo {
+  border-radius: 80px;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto -80px auto;
+  position: relative;
+  top: -80px;
+  border: 6px solid rgba(255, 255, 255, 0.8);
+}
 .home__name {
   font-size: 5rem;
   padding-bottom: 1rem;
@@ -289,28 +299,30 @@
 }
 
 @media screen and (min-width: 768px) {
-  .menu-btn {
+  /*.menu-btn {
     visibility: hidden;
   }
 
   .nav {
     visibility: visible;
-  }
-  .nav .menu-nav {
-    display: block;
-    transform: translateY(0);
-    height: 100%;
-    background: transparent;
-    text-align: right;
-  }
-  .nav .menu-nav__item {
-    display: inline;
-    padding-right: 1.5rem;
-  }
-  .nav .menu-nav__link {
-    font-size: 1.5rem;
-  }
 
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+
+      &__item {
+        display: inline;
+        padding-right: 1.5rem;
+      }
+
+      &__link {
+        font-size: 1.5rem;
+      }
+    }
+  }*/
   .about__bio {
     font-size: 1.2rem;
   }
