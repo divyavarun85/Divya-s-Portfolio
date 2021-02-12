@@ -1,15 +1,16 @@
 .about {
-  padding-bottom: 2rem;
+  //padding-bottom: 2rem;
+  background-color: $screen-color;
 
   &__bio-image {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background: linear-gradient(
         to right,
         rgba($primary-color, 0.9),
         rgba($primary-color, 0.3)
       ),
-      url("../img/divya-photo.jpg");
+      url("../img/divya-photo-about1.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -25,10 +26,19 @@
     text-align: center;
 
     .text-secondary {
+      font-size: 3rem;
+      font-weight: 400;
+      border-bottom: 2px solid set-text-color($primary-color);
       padding-bottom: 1rem;
+      margin-bottom: 1rem;
     }
   }
-
+  ul {
+    list-style-type: none;
+    li {
+      margin: 0 0 9px 0;
+    }
+  }
   .jobs {
     width: 60vw;
     margin: 2rem auto 0 auto;

@@ -100,7 +100,7 @@
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background-color: #272727;
+  background-color: #130c0c;
   list-style-type: none;
   padding-right: 1rem;
   transform: translateY(-100%);
@@ -148,12 +148,12 @@
 }
 
 .about {
-  padding-bottom: 2rem;
+  background-color: #e6b3cc;
 }
 .about__bio-image {
-  height: 50vh;
+  height: 60vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/divya-photo.jpg");
+  background: linear-gradient(to right, rgba(19, 12, 12, 0.9), rgba(19, 12, 12, 0.3)), url("../img/divya-photo-about1.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -168,7 +168,17 @@
   text-align: center;
 }
 .about__bio .text-secondary {
+  font-size: 3rem;
+  font-weight: 400;
+  border-bottom: 2px solid #fff;
   padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.about ul {
+  list-style-type: none;
+}
+.about ul li {
+  margin: 0 0 9px 0;
 }
 .about .jobs {
   width: 60vw;
@@ -178,7 +188,7 @@
   grid-gap: 2rem;
 }
 .about .jobs__job {
-  background: #414141;
+  background: #322020;
   padding: 0.5rem;
   border-bottom: 5px solid #ff652f;
 }
@@ -203,7 +213,7 @@
 .projects__bio-image {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/divya-photo.jpg");
+  background: linear-gradient(to right, rgba(19, 12, 12, 0.9), rgba(19, 12, 12, 0.3)), url("../img/divya-photo.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -246,23 +256,20 @@
   opacity: 0.9;
 }
 .projects__btns {
-  /*position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    text-align: center;
-  }
-
-  /*&__btn {
-    opacity: 0;
-    column-rule: set-text-color($secondary-color);
-    @include transition-ease;*/
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  z-index: 2;
 }
-.projects__btns:hover {
+.projects__btn {
+  -moz-column-rule: #000;
+       column-rule: #000;
+  transition: all 0.5s ease-in-out;
+}
+.projects__btn:hover {
   color: #fff;
 }
 .projects .social-icons {
@@ -280,7 +287,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/divya-photo.jpg");
+  background: linear-gradient(to right, rgba(19, 12, 12, 0.9), rgba(19, 12, 12, 0.3)), url("../img/divya-photo.jpg");
   background-size: cover;
 }
 .contact h2 {
@@ -474,6 +481,7 @@ main .social-icons {
 main .social-icons a {
   padding: 0.4rem;
   transition: all 0.5s ease-in-out;
+  color: #000000;
 }
 main .social-icons a:hover {
   color: #ff652f;

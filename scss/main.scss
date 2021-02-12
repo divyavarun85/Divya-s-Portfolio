@@ -127,6 +127,7 @@ main {
     a {
       padding: 0.4rem;
       @include transition-ease;
+      color: $social-icon-color;
       &:hover {
         color: $secondary-color;
       }
