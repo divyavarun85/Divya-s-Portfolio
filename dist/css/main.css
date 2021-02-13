@@ -33,6 +33,83 @@
   font-weight: 700;
 }
 
+.projects {
+  padding-bottom: 2rem;
+}
+.projects__bio-image {
+  height: 30vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(19, 12, 12, 0.9), rgba(19, 12, 12, 0.3));
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.projects__bio-image .text-secondary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.projects__items {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.projects__item {
+  position: relative;
+  border-bottom: 5px solid #ff652f;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects__item img {
+  width: 100%;
+}
+.projects__item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ff652f;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.projects__item:hover::after {
+  top: 0;
+  opacity: 0.9;
+}
+.projects__btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  z-index: 2;
+}
+.projects__btns .invisible {
+  display: none;
+}
+.projects__btn {
+  -moz-column-rule: #000;
+       column-rule: #000;
+  transition: all 0.5s ease-in-out;
+}
+.projects__btn:hover {
+  color: #fff;
+}
+.projects .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.projects footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
 /*Creating the burger menu button*/
 .menu-btn {
   position: absolute;
@@ -95,10 +172,12 @@
 }
 .nav .menu-nav {
   display: flex;
-  flex-flow: column wrap;
+  z-index: 5;
+  flex-flow: row;
+  display: inline block;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  justify-content: space-evenly;
+  height: 60vh;
   overflow: hidden;
   background-color: #130c0c;
   list-style-type: none;
@@ -108,6 +187,7 @@
 }
 .nav .menu-nav.open {
   transform: translate(0);
+  z-index: 5;
 }
 .nav .menu-nav.__item {
   transform: translate(100vw);
@@ -115,6 +195,7 @@
 }
 .nav .menu-nav.__item.open {
   transform: translateX(0);
+  z-index: 5;
 }
 .nav .menu-nav.__item.active > a {
   color: #ff652f;
@@ -168,6 +249,7 @@
   text-align: center;
 }
 .about__bio .text-secondary {
+  padding-top: 3px;
   font-size: 3rem;
   font-weight: 400;
   border-bottom: 2px solid #fff;
@@ -207,79 +289,6 @@
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
-.projects {
-  padding-bottom: 2rem;
-}
-.projects__bio-image {
-  height: 30vh;
-  width: 100%;
-  background: linear-gradient(to right, rgba(19, 12, 12, 0.9), rgba(19, 12, 12, 0.3)), url("../img/divya-photo.jpg");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-.projects__bio-image .text-secondary {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-.projects__items {
-  width: 60vw;
-  margin: 2rem auto 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-}
-.projects__item {
-  position: relative;
-  border-bottom: 5px solid #ff652f;
-  overflow: hidden;
-  cursor: pointer;
-}
-.projects__item img {
-  width: 100%;
-}
-.projects__item::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #ff652f;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-}
-.projects__item:hover::after {
-  top: 0;
-  opacity: 0.9;
-}
-.projects__btns {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  z-index: 2;
-}
-.projects__btn {
-  -moz-column-rule: #000;
-       column-rule: #000;
-  transition: all 0.5s ease-in-out;
-}
-.projects__btn:hover {
-  color: #fff;
-}
-.projects .social-icons {
-  display: flex;
-  flex-direction: column;
-}
-.projects footer {
-  transform: rotate(90deg) translate(-3rem, -5rem);
-}
-
 .contact {
   height: 100%;
   padding-top: 40vh;
@@ -287,7 +296,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to right, rgba(19, 12, 12, 0.9), rgba(19, 12, 12, 0.3)), url("../img/divya-photo.jpg");
+  background: linear-gradient(to right, rgba(19, 12, 12, 0.9), rgba(19, 12, 12, 0.3));
   background-size: cover;
 }
 .contact h2 {
@@ -306,30 +315,28 @@
 }
 
 @media screen and (min-width: 768px) {
-  /*.menu-btn {
+  .menu-btn {
     visibility: hidden;
   }
 
   .nav {
     visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
 
-    .menu-nav {
-      display: block;
-      transform: translateY(0);
-      height: 100%;
-      background: transparent;
-      text-align: right;
-
-      &__item {
-        display: inline;
-        padding-right: 1.5rem;
-      }
-
-      &__link {
-        font-size: 1.5rem;
-      }
-    }
-  }*/
   .about__bio {
     font-size: 1.2rem;
   }
