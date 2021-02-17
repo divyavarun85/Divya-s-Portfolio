@@ -11,7 +11,9 @@ body {
   /*background: $primary-color;*/
   background: $screen-color;
   color: set-text-color($primary-color);
-  height: 100vh;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto !important;
   font-family: "segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
 }

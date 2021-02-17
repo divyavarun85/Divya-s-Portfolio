@@ -1,4 +1,140 @@
+@include media-xsm {
+  .home {
+    .ripple-background {
+      .small {
+        width: 100px;
+        height: 100px;
+        left: -50px;
+        bottom: -50px;
+      }
+
+      .medium {
+        width: 200px;
+        height: 200px;
+        left: -100px;
+        bottom: -100px;
+      }
+
+      .large {
+        width: 300px;
+        height: 300px;
+        left: -150px;
+        bottom: -150px;
+      }
+
+      .xlarge {
+        width: 400px;
+        height: 400px;
+        left: -200px;
+        bottom: -200px;
+      }
+
+      .xxlarge {
+        width: 500px;
+        height: 500px;
+        left: -250px;
+        bottom: -250px;
+      }
+    }
+    &__photo {
+      border-radius: 150px;
+    }
+
+    &__name {
+      padding-top: 10px;
+      font-size: 20px;
+    }
+    h2 {
+      color: $primary-color;
+      width: 100%;
+    }
+    .social-icons {
+      font-size: 9px;
+    }
+  }
+
+  .nav {
+    .menu-nav {
+      font-size: 10px;
+      height: 15vh;
+    }
+  }
+  .about {
+    &__bio-image {
+      height: 78vh;
+    }
+    &__bio {
+      .text-secondary {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .jobs {
+      width: 95vw;
+      grid-gap: 0;
+
+      &__job {
+        .text-secondary {
+          font-size: 15px;
+        }
+        h3 {
+          font-size: 13px;
+        }
+        p {
+          font-size: 10px;
+          line-height: 1.1rem;
+        }
+      }
+    }
+    .social-icons {
+      font-size: 10px;
+      flex-direction: row;
+    }
+    footer {
+      //  padding-top: 15px;
+      transform: none;
+      // position: relative;
+      bottom: 0;
+    }
+  }
+  .projects {
+    &__bio-image {
+      height: 20vh;
+    }
+    .social-icons {
+      font-size: 10px;
+    }
+  }
+  .contact {
+    padding-top: 20vh;
+    h2 {
+      font-size: 2rem;
+    }
+    &__list {
+      width: 80%;
+      justify-content: center;
+    }
+    .social-icons {
+      font-size: 10px;
+      padding-left: 0;
+    }
+  }
+}
+
+@include media-sm {
+  .about {
+    &__bio-image {
+      height: 58vh;
+    }
+  }
+}
+
 @include media-md {
+  body {
+    overflow-y: auto !important;
+  }
+
   .menu-btn {
     visibility: hidden;
   }
@@ -23,10 +159,20 @@
       }
     }
   }
-
-  .about__bio {
-    font-size: 1.2rem;
+  .about {
+    &__bio {
+      height: 60vw;
+      font-size: 1.2rem;
+    }
+    .jobs {
+      width: 80%;
+      grid-gap: 0;
+    }
+    footer {
+      position: relative;
+    }
   }
+
   .projects {
     &__bio-image {
       height: 40vh;
@@ -38,8 +184,15 @@
       font-size: 3rem;
     }
   }
-  .contact__list {
-    grid-template-columns: repeat(2, 1fr);
+
+  .contact {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 2rem 4rem;
+    }
+    .social-icons {
+      padding-left: 0;
+    }
   }
 }
 
@@ -47,15 +200,56 @@
   .projects {
     &__items {
       grid-template-columns: repeat(3, 1fr);
+      width: 85vw;
+    }
+    .social-icons {
+      position: relative;
+      flex-direction: row;
+      justify-content: center;
+      padding: 75px 0;
+      font-size: 30px;
     }
   }
-  .contact__list {
-    grid-template-columns: repeat(3, 1fr);
+
+  .contact {
+    .social-icons {
+      font-size: 25px;
+      padding-left: 0;
+    }
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 40px;
+    }
+
+    &__address {
+      line-height: 30px;
+    }
+  }
+
+  .about {
+    &__bio-image {
+      height: 35vh;
+    }
+    .jobs {
+      width: 95vw;
+    }
+    .social-icons {
+      position: relative;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 85px;
+      font-size: 25px;
+    }
   }
 }
 
 @include media-xl {
+  .about {
+    &__bio-image {
+      height: 95vh;
+    }
+  }
   .projects__bio-image {
-    height: 50vh;
+    height: 35vh;
   }
 }

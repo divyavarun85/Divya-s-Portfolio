@@ -22,6 +22,17 @@ $social-icon-color: #000000;
   }
 }
 
+@mixin media-xsm {
+  @media screen and (min-width: 320px) and (max-width: 359px) {
+    @content;
+  }
+}
+@mixin media-sm {
+  @media screen and (min-width: 360px) {
+    @content;
+  }
+}
+
 @mixin media-md {
   @media screen and (min-width: 768px) {
     @content;
