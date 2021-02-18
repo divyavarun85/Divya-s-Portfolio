@@ -1,6 +1,6 @@
 @include media-xsm {
   .home {
-    .ripple-background {
+    /*.ripple-background {
       .small {
         width: 100px;
         height: 100px;
@@ -35,7 +35,7 @@
         left: -250px;
         bottom: -250px;
       }
-    }
+    }*/
     &__photo {
       border-radius: 150px;
     }
@@ -52,7 +52,6 @@
       font-size: 9px;
     }
   }
-
   .nav {
     .menu-nav {
       font-size: 10px;
@@ -71,7 +70,7 @@
       }
     }
     .jobs {
-      width: 95vw;
+      width: 75vw;
       grid-gap: 0;
 
       &__job {
@@ -89,40 +88,94 @@
     }
     .social-icons {
       font-size: 10px;
-      flex-direction: row;
+      flex-direction: column;
+      left: 0;
     }
     footer {
-      //  padding-top: 15px;
       transform: none;
-      // position: relative;
-      bottom: 0;
+      transform: rotate(90deg) translate(-3rem, -5rem);
     }
+    bottom: 0;
   }
-  .projects {
-    &__bio-image {
-      height: 20vh;
-    }
-    .social-icons {
-      font-size: 10px;
-    }
+}
+.projects {
+  &__bio-image {
+    height: 20vh;
   }
-  .contact {
-    padding-top: 20vh;
-    h2 {
-      font-size: 2rem;
-    }
-    &__list {
-      width: 80%;
-      justify-content: center;
-    }
-    .social-icons {
-      font-size: 10px;
-      padding-left: 0;
-    }
+  .social-icons {
+    font-size: 10px;
+  }
+}
+.contact {
+  height: 100vh;
+  padding-top: 20vh;
+  h2 {
+    font-size: 2rem;
+  }
+  &__list {
+    width: 80%;
+    justify-content: center;
+  }
+  .social-icons {
+    font-size: 10px;
+    padding-left: 0;
   }
 }
 
 @include media-sm {
+  .home {
+    /*.ripple-background {
+      .small {
+        width: 100px;
+        height: 100px;
+        left: -50px;
+        bottom: -50px;
+      }
+
+      .medium {
+        width: 200px;
+        height: 200px;
+        left: -100px;
+        bottom: -100px;
+      }
+
+      .large {
+        width: 300px;
+        height: 300px;
+        left: -150px;
+        bottom: -150px;
+      }
+
+      .xlarge {
+        width: 400px;
+        height: 400px;
+        left: -200px;
+        bottom: -200px;
+      }
+
+      .xxlarge {
+        width: 500px;
+        height: 500px;
+        left: -250px;
+        bottom: -250px;
+      }
+    }*/
+    &__photo {
+      border-radius: 150px;
+    }
+
+    &__name {
+      padding-top: 10px;
+      font-size: 20px;
+    }
+    h2 {
+      color: $primary-color;
+      width: 100%;
+    }
+    .social-icons {
+      font-size: 9px;
+    }
+  }
   .about {
     &__bio-image {
       height: 58vh;
@@ -131,6 +184,59 @@
 }
 
 @include media-md {
+  .home {
+    /*  .ripple-background {
+      .small {
+        width: 100px;
+        height: 100px;
+        left: -50px;
+        bottom: -50px;
+      }
+
+      .medium {
+        width: 200px;
+        height: 200px;
+        left: -100px;
+        bottom: -100px;
+      }
+
+      .large {
+        width: 300px;
+        height: 300px;
+        left: -150px;
+        bottom: -150px;
+      }
+
+      .xlarge {
+        width: 400px;
+        height: 400px;
+        left: -200px;
+        bottom: -200px;
+      }
+
+      .xxlarge {
+        width: 500px;
+        height: 500px;
+        left: -250px;
+        bottom: -250px;
+      }
+    }*/
+    &__photo {
+      border-radius: 150px;
+    }
+
+    &__name {
+      padding-top: 10px;
+      font-size: 20px;
+    }
+    h2 {
+      color: $primary-color;
+      width: 100%;
+    }
+    .social-icons {
+      font-size: 9px;
+    }
+  }
   body {
     overflow-y: auto !important;
   }
