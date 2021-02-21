@@ -1,4 +1,6 @@
-@include media-xsm {
+/*Query for min-width:320 and orientation portrait*/
+
+@include media-xsm-portrait {
   .home {
     /*.ripple-background {
       .small {
@@ -119,6 +121,50 @@
   .social-icons {
     font-size: 10px;
     padding-left: 0;
+  }
+}
+
+/* minimum width 320 and orientation - landscape*/
+
+@include media-xsm-landscape {
+  .home {
+    &__name {
+      margin-top: 1rem;
+      font-size: 25px;
+      padding-bottom: 0.4rem;
+    }
+    .social-icons {
+      padding-top: 5rem;
+      position: relative;
+      text-align: left;
+    }
+  }
+
+  .about {
+    &__bio {
+      margin-top: 0;
+      transform: translateY(10%);
+      height: 97vh;
+      &-image {
+        height: 97vh;
+      }
+      .text-secondary {
+        padding-top: 0;
+        font-size: 1.5rem;
+        padding-bottom: 0.25rem;
+        margin-bottom: 0.25rem;
+      }
+    }
+    .jobs {
+      width: 80%;
+    }
+    .social-icons {
+      left: 0.4rem;
+      color: white !important;
+    }
+    footer {
+      right: 1.5rem;
+    }
   }
 }
 
