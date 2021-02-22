@@ -34,8 +34,14 @@ $social-icon-color: #000000;
   }
 }
 
-@mixin media-sm {
-  @media only screen and (min-width: 360px) and(orientation:portrait) {
+@mixin media-sm-portrait {
+  @media only screen and (min-width: 360px) and (max-width: 410px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin media-sm-landscape {
+  @media only screen and (min-width: 360px) and (orientation: landscape) {
     @content;
   }
 }

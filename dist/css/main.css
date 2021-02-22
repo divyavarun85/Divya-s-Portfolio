@@ -416,6 +416,15 @@
 }
 .projects .social-icons {
   font-size: 10px;
+  left: 0.25rem;
+  bottom: 8rem;
+}
+.projects__items {
+  grid-gap: 0.25rem;
+  width: 75vw;
+}
+.projects footer {
+  bottom: 8rem;
 }
 
 .contact {
@@ -504,7 +513,7 @@
     padding-top: 0.5rem;
   }
 }
-@media only screen and (min-width: 360px) and (orientation: portrait) {
+@media only screen and (min-width: 360px) and (max-width: 410px) and (orientation: portrait) {
   .home {
     /*.ripple-background {
       .small {
@@ -559,7 +568,40 @@
   }
 
   .about__bio-image {
-    height: 58vh;
+    height: 68vh;
+  }
+  .about__bio .text-secondary {
+    font-size: 2rem;
+  }
+  .about .social-icons {
+    font-size: 0.75rem;
+    left: 0.25rem;
+  }
+  .about footer {
+    padding-right: rem;
+  }
+  .about .jobs {
+    width: 75vw;
+  }
+
+  .nav .menu-nav {
+    height: 20vh;
+    font-size: 0.75rem;
+  }
+
+  .projects__items {
+    grid-gap: 0.23rem;
+  }
+  .projects .social-icons {
+    bottom: 15rem;
+  }
+  .projects footer {
+    bottom: 15rem;
+  }
+}
+@media only screen and (min-width: 360px) and (orientation: landscape) {
+  .about .jobs {
+    grid-gap: 0.23rem;
   }
 }
 @media screen and (min-width: 768px) {

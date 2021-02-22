@@ -100,12 +100,22 @@
     bottom: 0;
   }
 }
+
 .projects {
   &__bio-image {
     height: 20vh;
   }
   .social-icons {
     font-size: 10px;
+    left: 0.25rem;
+    bottom: 8rem;
+  }
+  &__items {
+    grid-gap: 0.25rem;
+    width: 75vw;
+  }
+  footer {
+    bottom: 8rem;
   }
 }
 .contact {
@@ -205,7 +215,7 @@
   }
 }
 
-@include media-sm {
+@include media-sm-portrait {
   .home {
     /*.ripple-background {
       .small {
@@ -259,9 +269,53 @@
       font-size: 9px;
     }
   }
+
   .about {
-    &__bio-image {
-      height: 58vh;
+    &__bio {
+      &-image {
+        height: 68vh;
+      }
+
+      .text-secondary {
+        font-size: 2rem;
+      }
+    }
+    .social-icons {
+      font-size: 0.75rem;
+      left: 0.25rem;
+    }
+    footer {
+      padding-right: rem;
+    }
+    .jobs {
+      width: 75vw;
+    }
+  }
+
+  .nav {
+    .menu-nav {
+      height: 20vh;
+      font-size: 0.75rem;
+    }
+  }
+
+  .projects {
+    &__items {
+      grid-gap: 0.23rem;
+    }
+    .social-icons {
+      bottom: 15rem;
+    }
+    footer {
+      bottom: 15rem;
+    }
+  }
+}
+
+@include media-sm-landscape {
+  .about {
+    .jobs {
+      grid-gap: 0.23rem;
     }
   }
 }
