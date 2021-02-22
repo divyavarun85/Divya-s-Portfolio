@@ -127,6 +127,11 @@
 /* minimum width 320 and orientation - landscape*/
 
 @include media-xsm-landscape {
+  .nav {
+    .menu-nav {
+      height: 20vh;
+    }
+  }
   .home {
     &__name {
       margin-top: 1rem;
@@ -134,9 +139,15 @@
       padding-bottom: 0.4rem;
     }
     .social-icons {
-      padding-top: 5rem;
+      padding-top: 3.5rem;
+      justify-content: center;
       position: relative;
-      text-align: left;
+      font-size: 0.75rem;
+      padding-right: 3rem;
+    }
+    footer {
+      position: relative;
+      text-align: -webkit-match-parent;
     }
   }
 
@@ -161,9 +172,35 @@
     .social-icons {
       left: 0.4rem;
       color: white !important;
+      font-size: 0.75rem;
     }
     footer {
       right: 1.5rem;
+    }
+  }
+
+  .projects {
+    &__bio-image {
+      height: 30vh;
+    }
+
+    &__items {
+      grid-gap: 0.1rem;
+    }
+  }
+  .contact {
+    overflow: visible;
+
+    h2 {
+      size: 0.5rem;
+    }
+
+    &__list {
+      font-size: 1rem;
+      grid-gap: 0.5rem;
+    }
+    .social-icons {
+      padding-top: 0.5rem;
     }
   }
 }
