@@ -108,14 +108,10 @@
   .social-icons {
     font-size: 10px;
     left: 0.25rem;
-    bottom: 8rem;
   }
   &__items {
     grid-gap: 0.25rem;
     width: 75vw;
-  }
-  footer {
-    bottom: 8rem;
   }
 }
 .contact {
@@ -289,12 +285,13 @@
     }
     .jobs {
       width: 75vw;
+      grid-gap: 0.25rem;
     }
   }
 
   .nav {
     .menu-nav {
-      height: 20vh;
+      height: 15vh;
       font-size: 0.75rem;
     }
   }

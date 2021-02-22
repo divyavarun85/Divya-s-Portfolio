@@ -417,14 +417,10 @@
 .projects .social-icons {
   font-size: 10px;
   left: 0.25rem;
-  bottom: 8rem;
 }
 .projects__items {
   grid-gap: 0.25rem;
   width: 75vw;
-}
-.projects footer {
-  bottom: 8rem;
 }
 
 .contact {
@@ -582,10 +578,11 @@
   }
   .about .jobs {
     width: 75vw;
+    grid-gap: 0.25rem;
   }
 
   .nav .menu-nav {
-    height: 20vh;
+    height: 15vh;
     font-size: 0.75rem;
   }
 
