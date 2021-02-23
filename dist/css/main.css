@@ -372,7 +372,7 @@
   }
 
   .nav .menu-nav {
-    font-size: 10px;
+    font-size: 12.5px;
     height: 15vh;
   }
 
@@ -425,7 +425,7 @@
 
 .contact {
   height: 100vh;
-  padding-top: 20vh;
+  padding-top: 16vh;
 }
 .contact h2 {
   font-size: 2rem;
