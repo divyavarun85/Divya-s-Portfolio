@@ -1,5 +1,6 @@
 finished
 ********
 
-iphone5/SE - both portrait and landscape (320*568)
-motoG4(360*640)
+iphone5/SE - both portrait and landscape (320*568) - (xsm)
+motoG4(360*640)- both portrait and landscape(640*360)-(sm)
+galaxy s5 (sm)

@@ -317,7 +317,108 @@
   }
 }
 
-@include media-md {
+@include media-md-portrait {
+  .nav {
+    .menu-nav {
+      height: 15vh;
+    }
+  }
+
+  .home {
+    padding-top: 30vh;
+
+    &__name {
+      font-size: 2.5rem;
+    }
+  }
+
+  .about {
+    &__bio {
+      &-image {
+        height: 60vh;
+
+        p {
+          line-height: 1.2rem;
+        }
+      }
+      .text-secondary {
+        font-size: 2.5rem;
+      }
+    }
+    ul {
+      line-height: 1.2rem;
+    }
+
+    .jobs {
+      grid-gap: 0.25rem;
+      width: 80vw;
+    }
+
+    .social-icons {
+      left: 0;
+      font-size: 0.8rem;
+    }
+  }
+  .projects {
+    &__bio-image {
+      height: 15vh;
+    }
+
+    .social-icons {
+      bottom: 5rem;
+    }
+
+    footer {
+      bottom: 5rem;
+    }
+  }
+
+  .contact {
+    .social-icons {
+      font-size: 12px;
+    }
+  }
+}
+
+@include media-md-landscape {
+  .about {
+    &__bio {
+      .text-secondary {
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1.25rem;
+      }
+      &-image {
+        p {
+          font-size: 1.15rem;
+          line-height: 1.75rem;
+        }
+      }
+    }
+    ul {
+      font-size: 1.15rem;
+      line-height: 1.25rem;
+    }
+
+    .jobs {
+      width: 85vw;
+    }
+  }
+
+  .projects {
+    &__items {
+      grid-gap: 0.8rem;
+    }
+  }
+
+  .contact {
+    &__list {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+/*@include media-md {
   .home {
     /*  .ripple-background {
       .small {
@@ -355,7 +456,7 @@
         bottom: -250px;
       }
     }*/
-    &__photo {
+/* &__photo {
       border-radius: 150px;
     }
 
@@ -436,6 +537,8 @@
   }
 }
 
+
+
 @include media-lg {
   .projects {
     &__items {
@@ -493,3 +596,4 @@
     height: 35vh;
   }
 }
+*/
