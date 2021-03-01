@@ -18,6 +18,19 @@
     top: -80px;
     border: 6px solid rgba(255, 255, 255, 0.8);
   }
+
+  &__photo_ipadpro {
+    //background-image: url("../dist/img/divya-photo.jpg");
+    border-radius: 80px;
+    // z-index: 2;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto -80px auto;
+    position: relative;
+    top: -80px;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+  }
   &__name {
     font-size: 5rem;
     padding-bottom: 1rem;
