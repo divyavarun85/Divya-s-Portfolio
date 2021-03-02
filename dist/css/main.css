@@ -896,7 +896,7 @@
   }
 
   .about__bio-image {
-    height: 50vh;
+    height: 60vh;
   }
   .about__bio p {
     font-size: 1.5rem;
@@ -936,7 +936,7 @@
   }
 }
 /*for ipad pro*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1265px) and (orientation: portrait) {
   body {
     overflow-y: scroll;
   }
@@ -1100,6 +1100,77 @@
   }
   .contact__list {
     font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1266px) {
+  body {
+    padding: 0 15px 0 15px;
+  }
+
+  .nav .menu-nav {
+    height: 16vh;
+  }
+  .nav ul {
+    font-size: 2.25rem;
+  }
+
+  .home__photo {
+    display: none;
+  }
+  .home .social-icons {
+    font-size: 1.5rem;
+  }
+  .home footer {
+    font-size: 1.5rem;
+  }
+
+  .about {
+    height: 100%;
+    padding-top: 10px;
+  }
+  .about__bio-image {
+    height: 40%;
+  }
+  .about__bio-image p,
+.about__bio-image ul {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+  .about__bio .text-secondary {
+    font-size: 3.5rem;
+  }
+  .about .jobs {
+    height: 55%;
+    width: 88vw;
+    grid-gap: 0.5rem;
+  }
+  .about .jobs__job {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+  .about .social-icons {
+    font-size: 1.25rem;
+  }
+  .about footer {
+    font-size: 1.5rem;
+  }
+
+  .contact {
+    padding-top: 25vh;
+  }
+  .contact h2 {
+    font-size: 3.5rem;
+  }
+  .contact__list {
+    padding-top: 2rem;
+    font-size: 3rem;
+  }
+  .contact .social-icons {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+  .contact footer {
+    font-size: 2rem;
   }
 }
 body {

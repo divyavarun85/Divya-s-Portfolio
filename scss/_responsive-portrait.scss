@@ -634,7 +634,7 @@
   .about {
     &__bio {
       &-image {
-        height: 50vh;
+        height: 60vh;
       }
       p {
         font-size: 1.5rem;
@@ -893,6 +893,93 @@
     }
     &__list {
       font-size: 1.2rem;
+    }
+  }
+}
+
+@include media-desktop-portrait {
+  body {
+    padding: 0 15px 0 15px;
+  }
+  .nav {
+    .menu-nav {
+      height: 16vh;
+    }
+    ul {
+      font-size: 2.25rem;
+    }
+  }
+  .home {
+    &__photo {
+      display: none;
+    }
+
+    .social-icons {
+      font-size: 1.5rem;
+    }
+
+    footer {
+      font-size: 1.5rem;
+    }
+  }
+
+  .about {
+    height: 100%;
+    padding-top: 10px;
+
+    &__bio {
+      &-image {
+        height: 40%;
+
+        p,
+        ul {
+          font-size: 1.5rem;
+          line-height: 1.7rem;
+        }
+      }
+
+      .text-secondary {
+        font-size: 3.5rem;
+      }
+    }
+    .jobs {
+      height: 55%;
+      width: 88vw;
+      grid-gap: 0.5rem;
+
+      &__job {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+      }
+    }
+    .social-icons {
+      font-size: 1.25rem;
+    }
+
+    footer {
+      font-size: 1.5rem;
+    }
+  }
+
+  .contact {
+    padding-top: 25vh;
+
+    h2 {
+      font-size: 3.5rem;
+    }
+
+    &__list {
+      padding-top: 2rem;
+      font-size: 3rem;
+    }
+
+    .social-icons {
+      font-size: 1.5rem;
+      padding-top: 2rem;
+    }
+
+    footer {
+      font-size: 2rem;
     }
   }
 }

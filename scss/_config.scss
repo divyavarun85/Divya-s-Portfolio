@@ -83,7 +83,12 @@ $social-icon-color: #000000;
 }
 
 @mixin media-xlg-portrait {
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) and (max-width: 1265px) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin media-desktop-portrait {
+  @media only screen and (min-width: 1266px) {
     @content;
   }
 }
