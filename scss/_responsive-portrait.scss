@@ -65,8 +65,10 @@
     }
   }
   .about {
+    height: 100%;
     &__bio-image {
-      height: 78vh;
+      padding-top: 2rem;
+      height: 45%;
     }
     &__bio {
       .text-secondary {
@@ -76,6 +78,7 @@
       }
     }
     .jobs {
+      height: 55%;
       width: 75vw;
       grid-gap: 0;
 
@@ -214,7 +217,7 @@
     }
   }
 }*/
-
+/* for min width 360*/
 @include media-sm-portrait {
   .home {
     /*.ripple-background {
@@ -272,9 +275,11 @@
   }
 
   .about {
+    height: 100%;
     &__bio {
       &-image {
-        height: 68vh;
+        padding-top: 2rem;
+        height: 50%;
       }
 
       .text-secondary {
@@ -289,6 +294,7 @@
       padding-right: rem;
     }
     .jobs {
+      height: 55%;
       width: 75vw;
       grid-gap: 0.25rem;
     }
@@ -409,14 +415,14 @@
   .about {
     &__bio {
       &-image {
-        height: 75vh;
+        padding-top: 1.5rem;
 
         p {
           line-height: 1.2rem;
         }
       }
       .text-secondary {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
     ul {
@@ -475,16 +481,17 @@
   }
 
   .about {
+    height: 100%;
     &__bio {
       &-image {
-        height: 60vh;
+        height: 40%;
 
         p {
           line-height: 1.2rem;
         }
       }
       .text-secondary {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
     ul {
@@ -492,6 +499,7 @@
     }
 
     .jobs {
+      height: 55%;
       grid-gap: 0.25rem;
       width: 80vw;
     }
@@ -578,13 +586,20 @@
   }
 
   .about {
+    height: 100%;
     &__bio {
       .text-secondary {
         font-size: 2.5rem;
       }
+
+      &-image {
+        padding-top: 2rem;
+        height: 45%;
+      }
     }
 
     .jobs {
+      height: 55%;
       width: 75vw;
       grid-gap: 0.3rem;
     }
@@ -632,9 +647,11 @@
   }
 
   .about {
+    height: 100%;
     &__bio {
       &-image {
-        height: 60vh;
+        height: 40%;
+        padding-top: 2rem;
       }
       p {
         font-size: 1.5rem;
@@ -650,6 +667,7 @@
       left: 0.5rem;
     }
     .jobs {
+      height: 55%;
       grid-gap: 0.25rem;
       width: 85vw;
       line-height: 2rem;
@@ -713,13 +731,15 @@
   }
 
   .about {
+    height: 100%;
     &__bio {
       &-image {
-        height: 48vh;
+        height: 40%;
+        padding-top: 2rem;
       }
 
       .text-secondary {
-        font-size: 5rem;
+        font-size: 3.5rem;
       }
 
       p {
@@ -733,6 +753,7 @@
     }
 
     .jobs {
+      height: 55%;
       grid-gap: 0.13rem;
       width: 80vw;
       font-size: 1.8rem;
@@ -841,9 +862,11 @@
   }
 
   .about {
+    height: 100%;
     &__bio {
       &-image {
-        height: 60vh;
+        height: 40%;
+        padding-top: 2rem;
 
         p,
         ul {
@@ -862,6 +885,7 @@
     }
 
     .jobs {
+      height: 55%;
       width: 80vw;
       grid-gap: 0.13rem;
     }
@@ -925,7 +949,7 @@
 
   .about {
     height: 100%;
-    padding-top: 10px;
+    padding-top: 3rem;
 
     &__bio {
       &-image {
@@ -953,11 +977,13 @@
       }
     }
     .social-icons {
-      font-size: 1.25rem;
+      font-size: 1.05rem;
     }
 
     footer {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      bottom: 2rem;
+      right: 0.55rem;
     }
   }
 

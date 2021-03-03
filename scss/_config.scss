@@ -75,6 +75,12 @@ $social-icon-color: #000000;
     @content;
   }
 }*/
+@mixin media-photo-portrait {
+  @media only screen and (min-width: 725px) and (max-width: 1264px) and (orientation: portrait) {
+    @content;
+  }
+}
+
 /*ipad-portrait*/
 @mixin media-lg-portrait {
   @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
