@@ -6,9 +6,10 @@
 
 @import "./contacts";
 @import "./responsive-portrait";
+@import "./responsive-landscape";
 
 body {
-  /*background: $primary-color;*/
+  background: $primary-color;
   background: $screen-color;
   color: set-text-color($primary-color);
   height: 100%;

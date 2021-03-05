@@ -65,7 +65,7 @@ $social-icon-color: #000000;
 }*/
 
 @mixin media-md-portrait {
-  @media only screen and (min-width: 411px) and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (min-width: 411px) and (max-width: 635px) and (orientation: portrait) {
     @content;
   }
 }
@@ -95,6 +95,23 @@ $social-icon-color: #000000;
 }
 @mixin media-desktop-portrait {
   @media only screen and (min-width: 1266px) {
+    @content;
+  }
+}
+
+/*Landscape media query starts*/
+@mixin media-sm-landscape {
+  @media only screen and (min-width: 568px) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin media-ipad-landscape {
+  @media only screen and (min-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin media-ipadpro-landscape {
+  @media only screen and (min-width: 1024px) and (orientation: landscape) {
     @content;
   }
 }

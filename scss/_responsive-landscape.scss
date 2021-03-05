@@ -1,0 +1,222 @@
+/*for iphone5/SE*/
+@include media-sm-landscape {
+  .home {
+    &__name {
+      font-size: 1.8rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 0.9rem;
+    }
+
+    .social-icons {
+      font-size: 0.75rem;
+      bottom: 0.5rem;
+    }
+
+    footer {
+      font-size: 0.8rem;
+      bottom: 0.2rem;
+    }
+  }
+
+  .about {
+    height: 100%;
+
+    &__bio {
+      &-image {
+        height: 40%;
+        padding-top: 2.5rem;
+      }
+      .text-secondary {
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .jobs {
+      width: 85vw;
+      grid-gap: 0.13rem;
+    }
+
+    .social-icons {
+      font-size: 0.7rem;
+      left: 0.1rem;
+    }
+
+    footer {
+      font-size: 0.7rem;
+      right: 2rem;
+      bottom: 0;
+    }
+  }
+
+  .projects {
+    height: 100%;
+    &__bio {
+      &-image {
+        .text-secondary {
+          margin-bottom: 1.1rem;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    footer {
+      font-size: 0.85rem;
+      right: 1.5rem;
+    }
+  }
+
+  .contact {
+    h2 {
+      font-size: 1.5rem;
+    }
+    &__list {
+      font-size: 1.2rem;
+      grid-gap: 0.5rem;
+    }
+
+    .social-icons {
+      position: fixed;
+    }
+
+    footer {
+      right: 2.5rem;
+    }
+  }
+}
+
+/*ipad landscape*/
+
+@include media-ipad-landscape {
+  .home {
+    &__name {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .social-icons {
+      font-size: 0.9rem;
+    }
+
+    footer {
+      font-size: 1.1rem;
+    }
+  }
+
+  .about {
+    .social-icons {
+      font-size: 0.9rem;
+    }
+
+    footer {
+      font-size: 1.1rem;
+      bottom: 1.5rem;
+    }
+  }
+
+  .projects {
+    &__bio {
+      &-image {
+        .text-secondary {
+          font-size: 2.5rem;
+        }
+      }
+    }
+    .social-icons {
+      font-size: 0.9rem;
+    }
+
+    footer {
+      font-size: 1.1rem;
+      bottom: 1.5rem;
+    }
+  }
+
+  .contact {
+    padding-top: 25vh;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    &__list {
+      font-size: 2rem;
+      grid-gap: 1.3rem;
+    }
+    .social-icons {
+      font-size: 0.9rem;
+    }
+
+    footer {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+/* for ipad pro landscape*/
+
+@include media-ipadpro-landscape {
+  .home {
+    &__name {
+      font-size: 3.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .social-icons {
+      font-size: 1.2rem;
+    }
+    footer {
+      font-size: 1.7rem;
+    }
+  }
+
+  .about {
+    &__bio {
+      .text-secondary {
+        font-size: 2.8rem;
+      }
+    }
+
+    .jobs {
+      width: 90vw;
+    }
+
+    footer {
+      font-size: 1.7rem;
+      right: -1rem;
+      bottom: 3rem;
+    }
+
+    .social-icons {
+      font-size: 1.2rem;
+    }
+  }
+
+  .projects {
+    .social-icons {
+      font-size: 1.2rem;
+    }
+    footer {
+      font-size: 1.7rem;
+      right: -1rem;
+      bottom: 3rem;
+    }
+  }
+
+  .contact {
+    .social-icons {
+      font-size: 1.2rem;
+    }
+    footer {
+      font-size: 1.7rem;
+    }
+  }
+}
